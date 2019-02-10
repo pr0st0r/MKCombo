@@ -1,6 +1,8 @@
 package ru.prostor.mkcombo.core.presenter;
 
 import ru.prostor.mkcombo.core.Lab;
+import ru.prostor.mkcombo.core.presenter.contracts.BindLab;
+import ru.prostor.mkcombo.core.presenter.contracts.ContractActivity;
 import ru.prostor.mkcombo.mk10.LabHeroesMKX;
 
 public class HeroisPresenter {

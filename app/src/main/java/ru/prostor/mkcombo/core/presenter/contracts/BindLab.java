@@ -1,4 +1,4 @@
-package ru.prostor.mkcombo.core.presenter;
+package ru.prostor.mkcombo.core.presenter.contracts;
 
 import java.util.List;
 

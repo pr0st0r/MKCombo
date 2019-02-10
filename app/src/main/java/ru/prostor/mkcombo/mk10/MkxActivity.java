@@ -13,7 +13,7 @@ import butterknife.ButterKnife;
 import ru.prostor.mkcombo.R;
 import ru.prostor.mkcombo.core.Hero;
 import ru.prostor.mkcombo.core.Lab;
-import ru.prostor.mkcombo.core.presenter.ContractActivity;
+import ru.prostor.mkcombo.core.presenter.contracts.ContractActivity;
 import ru.prostor.mkcombo.core.presenter.HeroisPresenter;
 import ru.prostor.mkcombo.core.rv.adapters.ListHeroisAdapter;
 

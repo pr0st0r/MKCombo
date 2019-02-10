@@ -5,7 +5,7 @@ import java.util.List;
 
 import ru.prostor.mkcombo.R;
 import ru.prostor.mkcombo.core.Hero;
-import ru.prostor.mkcombo.core.presenter.BindLab;
+import ru.prostor.mkcombo.core.presenter.contracts.BindLab;
 
 /**
  * Класс для создания и хранения героев
