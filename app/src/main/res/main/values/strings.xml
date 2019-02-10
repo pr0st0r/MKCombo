@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MKCombo</string>
+
+    <!-- Description -->
+    <string name="description_mk10">mkx</string>
+    <string name="description_mk11">mk11</string>
+</resources>

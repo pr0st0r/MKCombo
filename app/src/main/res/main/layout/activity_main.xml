@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/open_mkx_activity"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/black"
+        android:scaleType="fitCenter"
+        android:src="@drawable/mkx"
+        android:contentDescription="@string/description_mk10"/>
+
+    <ImageButton
+        android:id="@+id/open_mk11_activity"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/black"
+        android:scaleType="fitCenter"
+        android:src="@drawable/mk11"
+        android:contentDescription="@string/description_mk11"/>
+
+</LinearLayout>

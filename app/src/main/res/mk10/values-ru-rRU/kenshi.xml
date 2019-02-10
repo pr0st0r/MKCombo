@@ -1,0 +1,109 @@
+<resources>
+    <string name="kenshi_history"></string>
+
+    <!-- Стили боя -->
+    <string-array name="kenshi_style">
+        <item>Кэндзюцу</item>
+        <item>Баланс</item>
+        <item>Одержимый</item>
+    </string-array>
+
+    <!-- Стиль первый -->
+    <string-array name="kenshi_base_style_first">
+        <item>Быстрый удар:2%:1</item>
+        <item>Нижний с руки:2%:D 1</item>
+        <item>Прямой с ноги:2%:D 3</item>
+        <item>Оглушающий удар:3%:D 4</item>
+        <item>Высокое рубило:3%:2</item>
+        <item>Сбоку с ноги:5%:3</item>
+        <item>Ногой в голень:5%:B 3</item>
+        <item>Высокий сапок:7%:F 3</item>
+        <item>Прямой с ноги:7%:4</item>
+        <item>Лёгкая посечка:7%:B 4</item>
+        <item>Головокол:7%:F 2</item>
+        <item>Прыжок меча:9%:B 2</item>
+        <item>Вертушка:9%:F 4</item>
+        <item>Быстрый удар:10%:B 1</item>
+        <item>Восход кулака:14%:D 2</item>
+    </string-array>
+
+    <string-array name="kenshi_spec_style_first">
+        <item>Восходящий меч:8%:D B 1</item>
+        <item>Танец меча:14%:D B 1 + R2</item>
+        <item>Вращающийся клинок:8%:D F 1</item>
+        <item>Клинок торнадо:12%:D F 1 + R2</item>
+        <item>Телеслем:12%:D B 4</item>
+        <item>Телеподвес:3%:D B 4 + R2</item>
+        <item>Телетолчёк:7%:B F 2</item>
+        <item>Телевзрыв:10%:B F 2 + R2</item>
+        <item>Телебросок:13%:B F 3</item>
+        <item>Телеудар:17%:B F 3 + R2</item>
+        <item>Отражение клинка:0%:D B 2</item>
+        <item>Поглощение клинка:0%:D B 2 + R2</item>
+    </string-array>
+
+    <string-array name="kenshi_combo_style_first">
+        <item>Поцелуй меча:5%:1 1</item>
+        <item>Слепая зона:6%:2 1</item>
+        <item>Сила разума:6%:2 2</item>
+        <item>Быстрый клинок:7%:3 1</item>
+        <item>Разрез снизу вверх:8%:3 2</item>
+        <item>Разиня:9%:4 2</item>
+        <item>Забытый воин:9%:4 4</item>
+        <item>Внутреняя сила:9%:1 1 1</item>
+        <item>Дисбаланс:9%:1 1 4</item>
+        <item>Грех вращения:10%:B 3 2</item>
+        <item>Похищенная душа:10%:2 1 1</item>
+        <item>Концентрация:11%:2 2 4</item>
+        <item>Не вижу зла:11%:4 4 1</item>
+        <item>Недальновидный:12%:2 1 2</item>
+        <item>Полный шпагат:12%:4 2 1</item>
+        <item>Лезвие души:12%:F 3 2</item>
+        <item>Рубака с вращением:13%:3 1 1</item>
+        <item>Разрез сверху вниз:14%:3 2 2</item>
+        <item>Обострённые чувства:14%:4 D 4</item>
+        <item>Рассеянный:15%:2 1 1 2 + 4</item>
+        <item>Внутреняя тьма:16%:4 4 1 2</item>
+        <item>Предвиденье:16%:4 3</item>
+        <item>Прочные связи:18%:4 2 1 F 2</item>
+    </string-array>
+
+    <string-array name="kenshi_fatality_style_first">
+        <item>Телевертушка(далеко):Н/Д:B F B B</item>
+    </string-array>
+
+    <!-- Стиль Второй -->
+    <string-array name="kenshi_base_style_second">
+        <item>Поцелуй меча:5.00%:11</item>
+    </string-array>
+
+    <string-array name="kenshi_spec_style_second">
+        <item>Недальновидный:12.00%:212</item>
+    </string-array>
+
+    <string-array name="kenshi_combo_style_second">
+        <item>Рассеянный:15.00%:2112+4</item>
+    </string-array>
+
+    <string-array name="kenshi_fatality_style_second">
+        <item>Похищенная душа:10.00%:211</item>
+    </string-array>
+
+    <!-- Стиль Третий -->
+    <string-array name="kenshi_base_style_third">
+        <item>Поцелуй меча:5.00%:11</item>
+    </string-array>
+
+    <string-array name="kenshi_spec_style_third">
+        <item>Недальновидный:12.00%:212</item>
+    </string-array>
+
+    <string-array name="kenshi_combo_style_third">
+        <item>Рассеянный:15.00%:2112+4</item>
+    </string-array>
+
+    <string-array name="kenshi_fatality_style_third">
+        <item>Похищенная душа:10.00%:211</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,61 @@
+<resources>
+    <string name="kenshi_history"></string>
+
+    <!-- Fighting style -->
+    <string-array name="kenshi_style">
+        <item>Kenjutsu</item>
+        <item>Balance</item>
+        <item>Obsession</item>
+    </string-array>
+
+    <!-- Стиль первый -->
+    <string-array name="kenshi_base_style_first">
+        <item>Поцелуй меча:5.00%:11</item>
+    </string-array>
+
+    <string-array name="kenshi_spec_style_first">
+        <item>Недальновидный:12.00%:212</item>
+    </string-array>
+
+    <string-array name="kenshi_combo_style_first">
+        <item>Рассеянный:15.00%:2112+4</item>
+    </string-array>
+
+    <string-array name="kenshi_fatality_style_first">
+        <item>Похищенная душа:10.00%:211</item>
+    </string-array>
+
+    <!-- Стиль Второй -->
+    <string-array name="kenshi_base_style_second">
+        <item>Поцелуй меча:5.00%:11</item>
+    </string-array>
+
+    <string-array name="kenshi_spec_style_second">
+        <item>Недальновидный:12.00%:212</item>
+    </string-array>
+
+    <string-array name="kenshi_combo_style_second">
+        <item>Рассеянный:15.00%:2112+4</item>
+    </string-array>
+
+    <string-array name="kenshi_fatality_style_second">
+        <item>Похищенная душа:10.00%:211</item>
+    </string-array>
+
+    <!-- Стиль Третий -->
+    <string-array name="kenshi_base_style_third">
+        <item>Поцелуй меча:5.00%:11</item>
+    </string-array>
+
+    <string-array name="kenshi_spec_style_third">
+        <item>Недальновидный:12.00%:212</item>
+    </string-array>
+
+    <string-array name="kenshi_combo_style_third">
+        <item>Рассеянный:15.00%:2112+4</item>
+    </string-array>
+
+    <string-array name="kenshi_fatality_style_third">
+        <item>Похищенная душа:10.00%:211</item>
+    </string-array>
+</resources>
