@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">MKCombo</string>
-
+    <string name="base">Основа</string>
+    <string name="spec">Приёмы</string>
+    <string name="combo">Combo</string>
+    <string name="fatality">Фаталити</string>
     <!-- Описание -->
     <string name="description_mk10">mkx</string>
     <string name="description_mk11">mk11</string>

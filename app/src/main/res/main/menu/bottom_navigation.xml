@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/base"
+        android:enabled="true"
+        android:icon="@drawable/mortal_logo"
+        android:title="@string/base"/>
+    <item
+        android:id="@+id/spec"
+        android:enabled="true"
+        android:icon="@drawable/mortal_logo"
+        android:title="@string/spec"/>
+    <item
+        android:id="@+id/combo"
+        android:enabled="true"
+        android:icon="@drawable/mortal_logo"
+        android:title="@string/combo"/>
+    <item
+        android:id="@+id/fatality"
+        android:enabled="true"
+        android:icon="@drawable/mortal_logo"
+        android:title="@string/fatality"/>
+</menu>

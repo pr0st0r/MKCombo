@@ -1,8 +1,9 @@
 package ru.prostor.mkcombo.core;
 
+import java.io.Serializable;
 import java.util.Map;
 
-public class Hero {
+public class Hero implements Serializable {
     private String mName;
     private int mImage;
     private int mStyle;
@@ -11,10 +12,13 @@ public class Hero {
     private Map<String, Integer> mComboStyleSecond;
     private Map<String, Integer> mComboStyleThird;
 
-    public Hero(String name, int image, int style){
+    public Hero(String name, int image, int style, Map comboStyleFirst, Map comboStyleSecond, Map comboStyleThird){
         mName = name;
         mImage = image;
         mStyle = style;
+        mComboStyleFirst = comboStyleFirst;
+        mComboStyleSecond = comboStyleSecond;
+        mComboStyleThird = comboStyleThird;
     }
 
     public String getName() {
