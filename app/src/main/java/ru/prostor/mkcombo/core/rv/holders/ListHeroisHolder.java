@@ -3,6 +3,7 @@ package ru.prostor.mkcombo.core.rv.holders;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
+import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -42,7 +43,7 @@ public class ListHeroisHolder extends RecyclerView.ViewHolder {
         mContext = inflater.getContext();
     }
 
-    public void bind(Hero hero){
+    public void bind(@NonNull Hero hero){
         mHero = hero;
         setParams();
     }

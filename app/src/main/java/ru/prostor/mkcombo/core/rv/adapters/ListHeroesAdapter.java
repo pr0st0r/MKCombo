@@ -11,12 +11,12 @@ import java.util.List;
 import ru.prostor.mkcombo.core.Hero;
 import ru.prostor.mkcombo.core.rv.holders.ListHeroisHolder;
 
-public class ListHeroisAdapter extends RecyclerView.Adapter<ListHeroisHolder> {
+public class ListHeroesAdapter extends RecyclerView.Adapter<ListHeroisHolder> {
 
     private List<Hero> mHeroList;
     private Context mContext;
 
-    public ListHeroisAdapter(Context context) {
+    public ListHeroesAdapter(@NonNull Context context) {
         mContext = context;
     }
 
@@ -37,7 +37,7 @@ public class ListHeroisAdapter extends RecyclerView.Adapter<ListHeroisHolder> {
         return mHeroList.size();
     }
 
-    public void setHeroList(List<Hero> heroList) {
+    public void setHeroList(@NonNull List<Hero> heroList) {
         mHeroList = heroList;
     }
 }

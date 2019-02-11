@@ -1,5 +1,9 @@
 package ru.prostor.mkcombo.core;
 
+import android.support.annotation.ArrayRes;
+import android.support.annotation.DrawableRes;
+import android.support.annotation.NonNull;
+
 import java.io.Serializable;
 import java.util.Map;
 
@@ -12,7 +16,9 @@ public class Hero implements Serializable {
     private Map<String, Integer> mComboStyleSecond;
     private Map<String, Integer> mComboStyleThird;
 
-    public Hero(String name, int image, int style, Map comboStyleFirst, Map comboStyleSecond, Map comboStyleThird){
+    public Hero(String name, @DrawableRes int image,
+                @ArrayRes int style, @NonNull Map comboStyleFirst,
+                @NonNull Map comboStyleSecond, @NonNull Map comboStyleThird){
         mName = name;
         mImage = image;
         mStyle = style;

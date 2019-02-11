@@ -7,4 +7,5 @@
     <!-- Description -->
     <string name="description_mk10">mkx</string>
     <string name="description_mk11">mk11</string>
+    <string name="description_image">image_hero</string>
 </resources>

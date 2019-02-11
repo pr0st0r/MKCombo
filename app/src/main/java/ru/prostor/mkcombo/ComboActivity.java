@@ -2,6 +2,8 @@ package ru.prostor.mkcombo;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.ArrayRes;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.view.PagerTabStrip;
 import android.support.v4.view.ViewPager;
@@ -60,7 +62,7 @@ public class ComboActivity extends AppCompatActivity implements ContractComboAct
 
 
     @Override
-    public void setAdapterData(int style, Map... combo) {
+    public void setAdapterData(@ArrayRes int style,@NonNull Map... combo) {
         mComboPageAdapter.setStyle(style);
         mComboPageAdapter.setCombo(combo);
     }

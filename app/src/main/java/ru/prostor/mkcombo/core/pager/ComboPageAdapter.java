@@ -1,6 +1,8 @@
 package ru.prostor.mkcombo.core.pager;
 
 import android.content.res.Resources;
+import android.support.annotation.ArrayRes;
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -42,11 +44,11 @@ public class ComboPageAdapter extends FragmentPagerAdapter {
         return mStyle[i];
     }
 
-    public void setStyle(int style){
+    public void setStyle(@ArrayRes int style){
         mStyle = mResources.getStringArray(style);
     }
 
-    public void setCombo(Map... combo){
+    public void setCombo(@NonNull Map... combo){
         for(Map item : combo){
             mCombo.add(item);
         }

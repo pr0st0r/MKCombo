@@ -1,56 +1,22 @@
-package ru.prostor.mkcombo.core.pager;
-
+package ru.prostor.mkcombo.core.custom;
 
 import android.content.Context;
-import android.support.annotation.ArrayRes;
-import android.support.annotation.LayoutRes;
-import android.support.annotation.NonNull;
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
 import android.text.style.ImageSpan;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.TextView;
 
 import ru.prostor.mkcombo.R;
 
-public class ComboAdapter extends ArrayAdapter<String> {
 
-    private Context mContext;
-    private String[] mCombo;
+public class CustomTextView extends android.support.v7.widget.AppCompatTextView {
 
-    public ComboAdapter(@NonNull Context context,@LayoutRes int resource) {
-        super(context, resource);
-        mContext = context;
+    public CustomTextView(Context context) {
+        super(context);
     }
 
-    @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
-        View view = View.inflate(mContext, R.layout.item_combo, null);
-
-        TextView title_combo = view.findViewById(R.id.title_combo);
-        TextView combo = view.findViewById(R.id.combo);
-
-        String[] structure = mCombo[position].split(":");
-
-        title_combo.setText(structure[0] + " - урон:" + structure[1]);
-
-        SpannableStringBuilder str = convertCombo(structure[2]);
-        combo.setText(str);
-
-        return view;
+    public void setComboText(String text){
+        super.setText(convertCombo(text));
     }
-
-    @Override
-    public int getCount() {
-        return mCombo.length;
-    }
-
-    public void setCombo(@ArrayRes int combo) {
-        mCombo = mContext.getResources().getStringArray(combo);
-    }
-
 
     /**
      * Преобразовать комбинацию
@@ -91,5 +57,4 @@ public class ComboAdapter extends ArrayAdapter<String> {
 
         return strCombo;
     }
-
 }

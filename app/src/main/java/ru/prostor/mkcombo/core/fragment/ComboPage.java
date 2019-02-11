@@ -29,7 +29,7 @@ public class ComboPage extends Fragment implements BottomNavigationView.OnNaviga
     @BindView(R.id.navigation)
     BottomNavigationView mNavigation;
 
-    static public ComboPage newInstance(Map combo) {
+    static public ComboPage newInstance(@NonNull Map combo) {
         ComboPage comboPage = new ComboPage();
         comboPage.setCombo(combo);
         return comboPage;
@@ -51,7 +51,7 @@ public class ComboPage extends Fragment implements BottomNavigationView.OnNaviga
 
     }
 
-    public void setCombo(Map<String, Integer> combo) {
+    public void setCombo(@NonNull Map<String, Integer> combo) {
         mCombo = combo;
     }
 

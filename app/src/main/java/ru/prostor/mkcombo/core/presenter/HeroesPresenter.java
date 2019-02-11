@@ -5,12 +5,12 @@ import ru.prostor.mkcombo.core.presenter.contracts.BindLab;
 import ru.prostor.mkcombo.core.presenter.contracts.ContractActivity;
 import ru.prostor.mkcombo.mk10.LabHeroesMKX;
 
-public class HeroisPresenter {
+public class HeroesPresenter {
 
     private ContractActivity mActivity;
     private BindLab mModel;
 
-    public HeroisPresenter(Lab lab) {
+    public HeroesPresenter(Lab lab) {
         switch (lab){
             case MKX:
                 mModel = LabHeroesMKX.getInstance();
