@@ -1,43 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:width="20dp" android:height="20dp">
+    <item>
         <shape android:shape="oval">
             <solid android:color="#3e4042" />
+            <size android:width="20dp" android:height="20dp" />
         </shape>
     </item>
-    <item android:width="1.2dp" android:height="14dp" android:gravity="center">
+    <item android:gravity="center">
         <rotate
-            android:fromDegrees="36"
+            android:fromDegrees="33"
             android:pivotX="5"
-            android:pivotY="2">
+            android:pivotY="-1">
             <shape
                 android:shape="rectangle">
                 <corners android:radius="10dp"/>
                 <solid android:color="#20c7bf"/>
+                <size android:width="1dp" android:height="14dp" />
             </shape>
         </rotate>
     </item>
-    <item android:width="1.2dp" android:height="13.5dp" android:gravity="center">
+    <item android:gravity="center">
         <rotate
-            android:fromDegrees="-36"
-            android:pivotX="1"
-            android:pivotY="0">
+            android:fromDegrees="-33"
+            android:pivotX="-3"
+            android:pivotY="1">
             <shape
                 android:shape="rectangle">
                 <corners android:radius="10dp"/>
                 <solid android:color="#20c7bf"/>
+                <size android:width="1.2dp" android:height="14dp" />
             </shape>
         </rotate>
     </item>
-    <item android:width="1.2dp" android:height="16dp" android:gravity="center">
+    <item android:gravity="center">
         <rotate
             android:fromDegrees="90"
-            android:pivotX="-3"
-            android:pivotY="61%">
+            android:pivotX="-4"
+            android:pivotY="62%">
             <shape
                 android:shape="rectangle">
                 <corners android:radius="10dp"/>
                 <solid android:color="#20c7bf"/>
+                <size android:width="1.2dp" android:height="15.5dp" />
             </shape>
         </rotate>
     </item>

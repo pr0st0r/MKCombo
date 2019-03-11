@@ -1,5 +1,6 @@
 package ru.prostor.mkcombo.core.fragment;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -21,7 +22,7 @@ import ru.prostor.mkcombo.core.pager.ComboAdapter;
 public class ComboPage extends Fragment implements BottomNavigationView.OnNavigationItemSelectedListener{
 
     private Map<String, Integer> mCombo;
-    private Unbinder mUnbinder;
+    Unbinder unbinder;
     private ComboAdapter mComboAdapter;
 
     @BindView(R.id.list_combo)
@@ -29,22 +30,22 @@ public class ComboPage extends Fragment implements BottomNavigationView.OnNaviga
     @BindView(R.id.navigation)
     BottomNavigationView mNavigation;
 
-    static public ComboPage newInstance(@NonNull Map combo) {
+    static public ComboPage newInstance(@NonNull Map<String, Integer> combo) {
         ComboPage comboPage = new ComboPage();
         comboPage.setCombo(combo);
         return comboPage;
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.combo_page, null);
+        @SuppressLint("InflateParams") View view = inflater.inflate(R.layout.combo_page, null);
 
-        mUnbinder = ButterKnife.bind(this, view);
+        unbinder = ButterKnife.bind(this, view);
 
        mNavigation.setOnNavigationItemSelectedListener(this);
 
-        mComboAdapter = new ComboAdapter(getContext(), R.layout.item_combo);
+        mComboAdapter = new ComboAdapter(inflater.getContext(), R.layout.item_combo);
         mComboAdapter.setCombo(mCombo.get("base"));
         mListCombo.setAdapter(mComboAdapter);
         return view;

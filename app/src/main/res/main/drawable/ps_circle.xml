@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:width="20dp" android:height="20dp">
+    <item>
         <shape android:shape="oval">
             <solid android:color="#3e4042" />
+            <size android:width="20dp" android:height="20dp" />
         </shape>
     </item>
-    <item android:width="17dp" android:height="17dp" android:gravity="center">
+    <item android:gravity="center">
         <rotate
-            android:fromDegrees="-2"
-            android:pivotX="40"
+            android:fromDegrees="0"
+            android:pivotX="30"
             android:pivotY="0">
             <shape android:shape="oval">
                 <stroke android:color="#e85d79" android:width="1.5dp"/>
+                <size android:width="17dp" android:height="17dp" />
             </shape>
         </rotate>
     </item>

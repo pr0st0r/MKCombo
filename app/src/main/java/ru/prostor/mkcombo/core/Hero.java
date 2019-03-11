@@ -8,7 +8,7 @@ import java.io.Serializable;
 import java.util.Map;
 
 public class Hero implements Serializable {
-    private String mName;
+    private final String mName;
     private int mImage;
     private int mStyle;
 
@@ -16,9 +16,12 @@ public class Hero implements Serializable {
     private Map<String, Integer> mComboStyleSecond;
     private Map<String, Integer> mComboStyleThird;
 
-    public Hero(String name, @DrawableRes int image,
-                @ArrayRes int style, @NonNull Map comboStyleFirst,
-                @NonNull Map comboStyleSecond, @NonNull Map comboStyleThird){
+    public Hero(String name,
+                @DrawableRes int image,
+                @ArrayRes int style,
+                @NonNull Map<String, Integer> comboStyleFirst,
+                @NonNull Map<String, Integer> comboStyleSecond,
+                @NonNull Map<String, Integer> comboStyleThird){
         mName = name;
         mImage = image;
         mStyle = style;

@@ -4,14 +4,15 @@ import android.content.Context;
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
 import android.text.style.ImageSpan;
+import android.util.AttributeSet;
 
 import ru.prostor.mkcombo.R;
 
 
-public class CustomTextView extends android.support.v7.widget.AppCompatTextView {
+public class ComboTextView extends android.support.v7.widget.AppCompatTextView {
 
-    public CustomTextView(Context context) {
-        super(context);
+    public ComboTextView(Context context, AttributeSet attrs) {
+        super(context, attrs);
     }
 
     public void setComboText(String text){
@@ -21,9 +22,9 @@ public class CustomTextView extends android.support.v7.widget.AppCompatTextView 
     /**
      * Преобразовать комбинацию
      * @param str - комбинация
-     * @return
+     * @return SpannableStringBuilder
      */
-    SpannableStringBuilder convertCombo(String str){
+    private SpannableStringBuilder convertCombo(String str){
         SpannableStringBuilder strCombo = new SpannableStringBuilder("");
 
         String[] elements = str.split(" ");

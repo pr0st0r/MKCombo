@@ -1,5 +1,4 @@
 <resources>
-    <string name="kenshi_history"></string>
 
     <!-- Стили боя -->
     <string-array name="kenshi_style">

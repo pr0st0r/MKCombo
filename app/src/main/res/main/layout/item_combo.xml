@@ -4,8 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingBottom="15dp"
-    android:background="@color/black">
+    android:paddingBottom="15dp">
 
     <TextView
         android:id="@+id/title_combo"
@@ -16,7 +15,7 @@
         android:padding="10dp"
         tools:text="Название"/>
 
-    <ru.prostor.mkcombo.core.custom.CustomTextView
+    <ru.prostor.mkcombo.core.custom.ComboTextView
         android:id="@+id/combo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
